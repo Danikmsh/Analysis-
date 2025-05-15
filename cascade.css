@@ -1,0 +1,160 @@
+/* Element selector */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* ID selector */
+#main-title {
+  color: #333;
+}
+
+/* Class selector */
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Box model */
+main {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  background-color: white;
+}
+
+
+/* Navigation Bar Container */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+/* Center the list inside navbar */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centers the list items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style links */
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: #ffcc00;
+}
+
+
+/* Vertical Navigation (e.g., in about.html) */
+.vertical-nav {
+  width: 20%;
+  float: left;
+}
+.vertical-nav a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+/* 2-Column Layout (About Page) */
+.about-container {
+  display: flex;
+}
+.about-container .left {
+  flex: 1;
+  padding: 10px;
+}
+.about-container .right {
+  flex: 1;
+  padding: 10px;
+}
+
+/* 3-Column Layout (Portfolio Page) */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-grid .card {
+  flex: 1 1 calc(33% - 20px);
+}
+
+/* Form styling */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Positioning & Layering */
+.banner {
+  position: relative;
+}
+.banner-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  color: white;
+}
+
+/* Print-friendly CSS for resume (About page) */
+@media print {
+  nav, footer {
+    display: none;
+  }
+/* Default light mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Toggle button styling */
+#darkModeToggle {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+

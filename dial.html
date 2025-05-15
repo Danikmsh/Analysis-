@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Danik">
+  <meta name="keywords" content="Contact, Email">
+  <meta name="author" content="Danik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="cascade.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+   <nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="info.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="research.html">Survey</a></li>
+  </ul>
+</nav>
+  </header>
+ <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+
+
+  <main>
+    <form id="contactForm">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+    <div id="formStatus"></div>
+
+    <p>Or email me directly: <a href="mailto:kabaditz723@gmail.com">kabaditz723@gmail.com</a></p>
+  </main>
+
+  <script src="jsscript.js"></script>
+</body>
+</html>

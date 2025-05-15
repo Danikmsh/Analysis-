@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Survey Form">
+  <meta name="keywords" content="Survey, Form">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="cascade.css">
+</head>
+<body>
+  <header>
+    <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+    <h1>Survey</h1>
+    <nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="info.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="dial.html">Contact</a></li>s 
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <p>How did you hear about me?</p>
+      <label><input type="radio" name="source" value="linkedin" required> LinkedIn</label><br>
+      <label><input type="radio" name="source" value="github"> GitHub</label><br>
+      <label><input type="radio" name="source" value="friend"> Friend</label><br>
+
+      <p>Which skills do you think I should improve?</p>
+      <label><input type="checkbox" name="improve" value="design"> Design</label><br>
+       <label><input type="checkbox" name="improve" value="html">Html</label>
+      <label><input type="checkbox" name="improve" value="js"> JavaScript</label><br>
+      <label><input type="checkbox" name="improve" value="backend"> Backend Development</label><br>
+
+      <p>Any comments?</p>
+      <textarea name="comments" rows="4" cols="30" placeholder="Write your feedback here..."></textarea><br><br>
+
+ 
+      <input type="submit" value="Submit Survey">
+    </form>
+  </main>
+
+  <script src="jsscript.js"></script>
+</body>
+</html>
